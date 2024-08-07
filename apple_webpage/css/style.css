@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: roboto mono;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.container {
+    background-color: black;
+    padding: 0px 100px 0 100px;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+header {
+    width: 85%;
+    height: 50px;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 60px 0 60px ; 
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.logo  img{
+    width: 40px;
+    height: 40px;
+
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+header ul li a {
+    margin-left: 15px;
+    font-weight: 400;
+    font-size: 15px;
+}
+header ul li a:hover , .active {
+    color: #50513c;
+}
+
+.main {
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+
+.main .content {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    
+}
+
+.content .text-cont {
+    width: 50%;
+    margin-right: 200px;
+    /* height: 300px; */
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+}
+
+h2, p {
+    margin-bottom: 20px;
+    color: #fff;
+}
+p {
+    font-size: 15px;
+    line-break: normal;
+    line-height: 25px;
+    word-spacing: 5px;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.button {
+    width: 200px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 14px;
+    border: solid 1px white;
+    padding: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #a8a7a763;
+}
+
+.image-holder img {
+    width:200px;
+    height: 300px;
+}
+
+.img {
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img img {
+    width: 40px;
+    height: 50px;
+    transition: transform 0.5s;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.img img:hover {
+    transform: scale(1.5);
+}
